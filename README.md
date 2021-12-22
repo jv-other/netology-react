@@ -1,2 +1,6 @@
-# netology-react
-React homeworks
+# Решение заданий к курсу «React»
+
+### Блок 1. Компоненты
+
+1.1. [Компоненты](components)
+
