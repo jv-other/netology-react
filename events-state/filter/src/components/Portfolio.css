@@ -1,0 +1,32 @@
+.portfolio {
+  width: 900px;
+  margin: auto;
+  column-count: 3;
+  column-gap: 10px;
+}
+
+.portfolio .portfolio-item img {
+  width: 100%;
+  margin: 4px 0;
+}
+
+.toolbar {
+  width: 100%;
+  column-span: all;
+  margin: 10px 0;
+}
+
+.toolbar .toolbar-btn,
+.toolbar .selected-btn {
+  font-size: 20px;
+  margin-right: 5px;
+  background: none;
+  border: 1px solid #555555;
+  color: #555555;
+}
+
+.toolbar .toolbar-btn:hover,
+.toolbar .selected-btn {
+  background-color: #555555;
+  color: white;
+}
