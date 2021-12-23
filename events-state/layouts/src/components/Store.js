@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import CardsView from "./CardsView";
 import ListView from "./ListView";
-import "./Store.css";
 
 // Переключение между типами расположения товаров
 const IconSwitch = ({ icon, onSwitch }) => (

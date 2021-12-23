@@ -1,7 +1,6 @@
 import React from "react";
 import Dropdown from "./components/Dropdown";
 import "./App.css";
-import "./assets/css/main.css";
 
 const items = ["Profile Information", "Change Password", "Become PRO", "Help", "Log Out"];
 
