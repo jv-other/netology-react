@@ -4,5 +4,6 @@
 
 1.1. [Компоненты](components)
 1.2. [Состояние компонентов](events-state)
+1.2. [Props](props)
 
 
