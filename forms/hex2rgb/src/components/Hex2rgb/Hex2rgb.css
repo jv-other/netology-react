@@ -1,0 +1,23 @@
+.hex2rgb-input {
+  width: 180px;
+  padding: 10px;
+  margin: 3px;
+  text-align: center;
+  font-size: inherit;
+  border: none; 
+}
+
+.hex2rgb-input:focus {
+  outline: none;
+  border: none; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.hex2rgb-label {
+  width: 180px;
+  padding: 10px;
+  margin: 3px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
