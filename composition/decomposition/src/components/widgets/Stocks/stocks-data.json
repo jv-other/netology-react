@@ -1,0 +1,17 @@
+[
+  {
+    "name": "USD MOEX",
+    "value": "63,52",
+    "delta": "+0,09"
+  },
+  {
+    "name": "EUR MOEX",
+    "value": "70,86",
+    "delta": "+0,14"
+  },
+  {
+    "name": "Нефть",
+    "value": "64,90",
+    "delta": "+1,63"
+  }
+]

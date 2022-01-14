@@ -1,0 +1,27 @@
+.widget-weather span {
+  margin: 2px 4px;
+}
+
+.widget-weather .weather-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+.widget-weather span.weather-image {
+  padding: 10px 30px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.widget-weather span.weather-value {
+  font-weight: bold;
+  font-size: 32px;
+  vertical-align: middle;
+}
+
+.widget-weather span.weather-details {
+  display: inline-block;
+  white-space: pre-wrap;
+}

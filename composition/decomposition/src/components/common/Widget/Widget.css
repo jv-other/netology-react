@@ -1,0 +1,14 @@
+.widget {
+  margin: 10px;
+}
+
+.widget h1 {
+  margin-bottom: 10px;
+}
+
+.widget h1 a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0d6efd;
+  text-decoration: none;
+}

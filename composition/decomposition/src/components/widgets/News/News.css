@@ -1,0 +1,18 @@
+.widget-news .news-section {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.widget-news .news-section .nav-link {
+  color: #97bffa;
+  cursor: pointer;
+}
+
+.widget-news .news-section.active .nav-link {
+  color: #0d6efd;
+}
+
+.news-item a {
+  text-decoration: none;
+  color: black;
+}

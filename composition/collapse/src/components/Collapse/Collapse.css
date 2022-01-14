@@ -1,0 +1,30 @@
+.collapse .collapse-content {
+  overflow: hidden;
+}
+
+.collapse .collapse-content-wrapper {
+  overflow: hidden;
+  transition: height 0.25s ease 0s;
+  height: auto;
+}
+
+.collapse.collapsed .collapse-content-wrapper {
+  height: 0;
+}
+
+.collapse .collapse-toggle {
+  border-bottom: 1px dashed black;
+  cursor: pointer;
+}
+
+.collapse .collapse-toggle::after {
+  content: "\25bc";
+  padding-left: 5px;
+  font-size: 12px;
+  vertical-align: middle;
+  color: #333333;
+}
+
+.collapse.expanded .collapse-toggle::after {
+  content: "\25B2";
+}

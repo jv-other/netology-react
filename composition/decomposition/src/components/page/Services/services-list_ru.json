@@ -1,0 +1,47 @@
+[
+  {
+    "id": "video",
+    "title": "Видео",
+    "icon": "logo192.png"
+  },
+  {
+    "id": "picts",
+    "title": "Картинки",
+    "icon": "logo192.png"
+  },
+  {
+    "id": "news",
+    "title": "Новости",
+    "icon": "logo192.png"
+  },
+  {
+    "id": "maps",
+    "title": "Карты",
+    "icon": "logo192.png"
+  },
+  {
+    "id": "translate",
+    "title": "Переводчик",
+    "icon": "logo192.png"
+  },
+  {
+    "id": "tv",
+    "title": "Эфир",
+    "icon": "logo192.png"
+  },
+  {
+    "id": "market",
+    "title": "Маркет",
+    "icon": "logo192.png"
+  },
+  {
+    "id": "music",
+    "title": "Музыка",
+    "icon": "logo192.png"
+  },
+  {
+    "id": "disc",
+    "title": "Диск",
+    "icon": "logo192.png"
+  }
+]

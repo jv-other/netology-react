@@ -1,0 +1,16 @@
+.banner {
+  cursor: pointer;
+}
+
+.banner>a {
+  text-decoration: none;
+  color: black;
+}
+
+.banner-img {
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding-bottom: 12%;
+  margin: 20px 0;
+}

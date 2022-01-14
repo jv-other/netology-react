@@ -1,0 +1,16 @@
+.widget-stocks a {
+  text-decoration: none;
+  color: black;
+}
+
+.widget-stocks .stock-item span {
+  text-transform: uppercase;
+}
+
+.widget-stocks .stock-item .stock-item-name {
+  font-weight: bold;
+}
+
+.widget-stocks .stock-item .stock-item-delta {
+  color: #aaaaaa;
+}

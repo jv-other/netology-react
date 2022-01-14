@@ -1,0 +1,21 @@
+.search-panel {
+  position: relative;
+}
+
+.search-panel .logo {
+  position: absolute;
+  left: -100px;
+  top: -30px;
+}
+
+.search-panel .logo .logo-img {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+.search-panel .search-sample-text {
+  color: #777777;
+}

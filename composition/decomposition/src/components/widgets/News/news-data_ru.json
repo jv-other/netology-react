@@ -1,0 +1,77 @@
+{
+  "Сейчас в СМИ": [
+    {
+      "id": "1",
+      "url": "https://lenta.ru/news/2022/01/13/sredstva/",
+      "icon": "https://avatars.mds.yandex.net/get-ynews-logo/26056/1047-1478692902215-square/logo-square",
+      "title": "Lenta.ru",
+      "text": "МИД России предупредил об ответе военными средствами при провале дипломатии"
+    },
+    {
+      "id": "2",
+      "url": "https://russian.rt.com/russia/news/948281-mintrud-pensiya-rossiya",
+      "icon": "https://avatars.mds.yandex.net/get-ynews-logo/28627/254083361-1516267195536-square/logo-square",
+      "title": "RT на русском",
+      "text": "Глава Минтруда: средний размер пенсии неработающего пенсионера составит 18 984 рубля"
+    },
+    {
+      "id": "3",
+      "url": "https://ria.ru/20220112/predlozheniya-1767563772.html",
+      "icon": "https://avatars.mds.yandex.net/get-ynews-logo/135513/1002-1544074003449-square/logo-square",
+      "title": "РИА Новости",
+      "text": "МИД России предупредил об ответе военными средствами при провале дипломатии"
+    },
+    {
+      "id": "4",
+      "url": "https://lenta.ru/news/2022/01/13/ne_rady/",
+      "icon": "https://avatars.mds.yandex.net/get-ynews-logo/26056/1047-1478692902215-square/logo-square",
+      "title": "Lenta.ru",
+      "text": "Рогозин попросил нового казахстанского министра не появляться на Байконуре"
+    },
+    {
+      "id": "5",
+      "url": "https://lenta.ru/news/2022/01/12/tu160/",
+      "icon": "https://avatars.mds.yandex.net/get-ynews-logo/26056/1047-1478692902215-square/logo-square",
+      "title": "Lenta.ru",
+      "text": "Телеканал «Звезда» опубликовал видео первого полета Ту-160М новой постройки"
+    }
+  ],
+  "Сейчас в Германии": [
+    {
+      "id": "6",
+      "url": "https://lenta.ru/news/2022/01/12/tu160/",
+      "icon": "https://avatars.mds.yandex.net/get-ynews-logo/26056/1047-1478692902215-square/logo-square",
+      "title": "Lenta.ru",
+      "text": "Телеканал «Звезда» опубликовал видео первого полета Ту-160М новой постройки"
+    },
+    {
+      "id": "7",
+      "url": "https://lenta.ru/news/2022/01/13/ne_rady/",
+      "icon": "https://avatars.mds.yandex.net/get-ynews-logo/26056/1047-1478692902215-square/logo-square",
+      "title": "Lenta.ru",
+      "text": "Рогозин попросил нового казахстанского министра не появляться на Байконуре"
+    },
+    {
+      "id": "8",
+      "url": "https://russian.rt.com/russia/news/948281-mintrud-pensiya-rossiya",
+      "icon": "https://avatars.mds.yandex.net/get-ynews-logo/28627/254083361-1516267195536-square/logo-square",
+      "title": "RT на русском",
+      "text": "Глава Минтруда: средний размер пенсии неработающего пенсионера составит 18 984 рубля"
+    },
+    {
+      "id": "9",
+      "url": "https://lenta.ru/news/2022/01/13/sredstva/",
+      "icon": "https://avatars.mds.yandex.net/get-ynews-logo/26056/1047-1478692902215-square/logo-square",
+      "title": "Lenta.ru",
+      "text": "МИД России предупредил об ответе военными средствами при провале дипломатии"
+    },
+    {
+      "id": "10",
+      "url": "https://ria.ru/20220112/predlozheniya-1767563772.html",
+      "icon": "https://avatars.mds.yandex.net/get-ynews-logo/135513/1002-1544074003449-square/logo-square",
+      "title": "РИА Новости",
+      "text": "МИД России предупредил об ответе военными средствами при провале дипломатии"
+    }
+  ],
+  "Рекомендуем": []
+}
