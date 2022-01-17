@@ -1,0 +1,26 @@
+.note-item {
+  padding: 1em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 250px;
+  height: 100px;
+  text-align: center;
+}
+
+.note-item .note-remove {
+  display: block;
+  position: absolute;
+  padding: 0 7px 2px 7px;
+  right: -15px;
+  top: -15px;
+  color: rgb(233, 78, 78);
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}

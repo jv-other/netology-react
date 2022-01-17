@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container,
+.watches,
+.watches-form,
+.form-field,
+.watches-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.watches .watches-form {
+  flex-direction: row;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em;
+}
+
+.watches-form .form-field {
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.form-field input, .form-field button {
+  padding: 10px;
+  min-width: 200px;
+  font-size: 16px;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(133, 133, 133);
+}
+
+.form-field .form-label {
+  margin-bottom: 10px;
+}
+
+.form-field button {
+  padding: 10px 20px;
+  margin-right: 0;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.form-field button:hover {
+  box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+.watches .watches-list {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 720px;
+}
+
+.watches-list .watches-item {
+  margin-right: 1em;
+  padding: 1em;
+}
+
+.watches-item .watches-title {
+  text-align: center;
+}
+
+.watches-item .watches-remove {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 0 5px 2px 5px ;
+  border-radius: 100%;
+  float: right;
+  background-color: white;
+}

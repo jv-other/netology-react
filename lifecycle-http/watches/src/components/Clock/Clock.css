@@ -1,0 +1,51 @@
+.clock {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 1em;
+  position: relative;
+  transform: rotate(180deg);
+}
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1px;
+  height: 75px;
+  background-color: black;
+  transform-origin: center 0;
+}
+
+.arrow.seconds {
+  background: none;
+  width: 0px;
+  border-right: 1px dashed black;
+}
+
+.arrow.minutes {
+  height: 73px;
+}
+
+.arrow.hours {
+  height: 43px;
+}
+
+.arrow.minutes::after,
+.arrow.hours::after {
+  display: block;
+  content: "\27A4";
+  width: 11px;
+  height: 11px;
+  font-size: 14px;
+  transform: rotate(90deg) translate(40px, 0);
+}
+
+.arrow.minutes::after {
+  transform: rotate(90deg) translate(62px, 0);
+}
+
+.arrow.hours::after {
+  transform: rotate(90deg) translate(32px, 0);
+}
