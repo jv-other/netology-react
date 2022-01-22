@@ -17,3 +17,5 @@
 2.2.    [Жизненный цикл и работа с HTTP](lifecycle-http)
 
 2.3.    [HOC](hoc)
+
+2.4.    [hooks, Context API](hooks-context)
