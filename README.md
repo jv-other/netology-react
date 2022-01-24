@@ -19,3 +19,5 @@
 2.3.    [HOC](hoc)
 
 2.4.    [hooks, Context API](hooks-context)
+
+2.5.    [React Router](router)
