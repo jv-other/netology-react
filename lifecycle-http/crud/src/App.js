@@ -11,19 +11,29 @@ const NOTES_API_URL = "http://localhost:7777/notes";
 const notesApi = new NotesAPI(NOTES_API_URL);
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [notes, setNotes] = useState([]);
 
-  useEffect(() => {
-    loading && notesApi.list().then(items => {
-      setLoading(false);
-      setNotes(items);
-    });
-  }, [loading])
+  const handleRefresh = async () => {
+    setLoading(true);
+    const items = await notesApi.list();
+    setLoading(false);
+    setNotes(items);
+  };
 
-  const handleAdd = note => notesApi.add(note).then(() => setLoading(true));
-  const handleRemove = noteId => notesApi.remove(noteId).then(() => setLoading(true));
-  const handleRefresh = () => setLoading(true);
+  useEffect(handleRefresh, []);
+
+  const handleAdd = async (note) => {
+    setLoading(true);
+    await notesApi.add(note);
+    await handleRefresh();
+  };
+
+  const handleRemove = async (noteId) => {
+    setLoading(true);
+    await notesApi.remove(noteId);
+    await handleRefresh();
+  };
 
   return (
     <div className="notes-container">

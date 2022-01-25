@@ -21,18 +21,19 @@ const Watches = ({ watches = [] }) => {
   const handleAdd = (evt) => {
     evt.preventDefault();
 
-    const item = items.find(i => form.name === i.name);
-    item
-      ? (item.timezoneOffset = parseInt(form.timezoneOffset))
-      : items.push({ name: form.name, timezoneOffset: parseInt(form.timezoneOffset) });
+    const index = (items.findIndex(item => form.name === item.name) + 1) || (items.length + 1);
+    setItems([
+      ...items.slice(0, index -1), 
+      { name: form.name, timezoneOffset: parseInt(form.timezoneOffset) },
+      ...items.slice(index)
+    ]);
 
     setForm({ name: "", timezoneOffset: "" });
-    setItems([...items]);
   };
 
   const handleRemove = (clockName) => {
-    items.splice(items.findIndex(i => clockName === i.name), 1);
-    setItems([...items]);
+    const newItems = items.filter(item => clockName !== item.name);
+    setItems(newItems);
   };
 
   return (
@@ -69,7 +70,7 @@ const Watches = ({ watches = [] }) => {
         </div>
       </form>
       <div className="watches-list">
-        {items.map((item, index) => (
+        {items.map(item => (
           <div key={item.name} className="watches-item">
             <div className="watches-title">
               {item.name}&nbsp;{`(${0 < item.timezoneOffset ? "+" : ""}${item.timezoneOffset}ч)`}

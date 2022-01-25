@@ -27,26 +27,32 @@ const getUserColor = userId => usersColors[userId] || (() => {
 })();
 
 function App() {
-  const [loading, setLoading] = useState(0);
+  const [loading, setLoading] = useState(true);
   const [messages, setMessages] = useState([]);
   const messagesList = useRef(null);
 
-  useEffect(() => {
-    let timeout = null;
-    loading
-      ? chatApi.list(messages.length && messages[messages.length - 1].id || 0).then(list => {
-        setLoading(false);
-        setMessages(prevMessages => prevMessages.concat(list));
-        // Авто-скроллинг
-        list.length && (messagesList.current.scrollTop = 0);
-      })
-      : (timeout = setTimeout(() => setLoading(true), REQUESTS_TIMEOUT));
-    return () => {
-      timeout && clearTimeout(timeout);
+  const refresh = async () => {
+    try {
+      const newMessages = await chatApi.list(messages.length && messages[messages.length - 1].id || 0);
+      setMessages(prevMessages => prevMessages.concat(newMessages));
+      newMessages.length && (messagesList.current.scrollTop = 0);
+    } finally {
+      setLoading(false);
     }
+  }
+
+  useEffect(() => {
+    if (!loading) {
+      const timeout = setTimeout(() => setLoading(true), REQUESTS_TIMEOUT);
+      return () => clearTimeout(timeout);
+    }
+    refresh();
   }, [loading]);
 
-  const handleAdd = message => chatApi.send(userId, message).then(() => setLoading(true));
+  const handleAdd = async (message) => {
+    await chatApi.send(userId, message);
+    setLoading(true);
+  };
 
   return (
     <div className="container">

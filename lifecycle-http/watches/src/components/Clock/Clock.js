@@ -23,9 +23,9 @@ const Clock = ({ timezoneOffset }) => {
   const [degrees, setDegrees] = useState(calculateDegrees(timezoneOffset));
 
   useEffect(() => {
-    const timeout = setTimeout(() => setDegrees(calculateDegrees(timezoneOffset)), 1000);
-    return () => clearTimeout(timeout);
-  }, [degrees])
+    const timeout = setInterval(() => setDegrees(calculateDegrees(timezoneOffset)), 1000);
+    return () => clearInterval(timeout);
+  }, [ timezoneOffset ]);
 
   return (
     <div className="clock">
