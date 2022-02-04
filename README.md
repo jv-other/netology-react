@@ -25,3 +25,5 @@
 ### Блок 3. Redux - управление состоянием
 
 3.1. [Redux](redux)
+
+3.2. [Redux и Redux Thunk](thunk)

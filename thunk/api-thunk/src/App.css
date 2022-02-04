@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+button.btn {
+  font-family: initial;
+}
+
+button.btn .spinner-border {
+  width: 1em;
+  height: 1em;
+}
