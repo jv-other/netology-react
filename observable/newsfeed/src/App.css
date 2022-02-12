@@ -1,0 +1,28 @@
+html, body {
+  background-color: #eaeaea;
+}
+
+.card {
+  font-size: 14px;
+}
+
+.card .card-header,
+.card .card-footer {
+  background-color: #ffffff;
+  border: none;
+}
+
+.card-header img {
+  max-height: 40px;
+}
+
+.btn-more {
+  min-width: 15rem;
+  margin-bottom: 20rem;
+}
+
+.spinner-grow.spinner-grow-sm {
+  width: 0.5rem;
+  height: 0.5rem;
+  vertical-align: 0.125rem;
+}

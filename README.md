@@ -27,3 +27,5 @@
 3.1. [Redux](redux)
 
 3.2. [Redux и Redux Thunk](thunk)
+
+3.3. [Redux Observable](observable)
