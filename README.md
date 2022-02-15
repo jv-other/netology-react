@@ -29,3 +29,5 @@
 3.2. [Redux и Redux Thunk](thunk)
 
 3.3. [Redux Observable](observable)
+
+3.4. [Redux Saga](saga)
